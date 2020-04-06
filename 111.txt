@@ -5,3 +5,5 @@
 5  rm 111.txt
 6 git diff HEAD
 7 二次add，但只提交了6的修改
+6 git diff HEAD
+7 二次add，但只提交了6的修改

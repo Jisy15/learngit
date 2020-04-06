@@ -1,0 +1,49 @@
+1、上传文件
+git add test.txt 
+或者git add .把所有文件添加到暂存区
+
+git commit test.txt -m'第一次上传'
+
+2、查看Git状态
+git status
+
+3、查看区别
+git diff test.txt
+git diff HEAD -- test.txt”命令可以查看⼯作区和版本库⾥⾯最新版本的区别
+
+4、查看上传记录
+git log test.txt
+5、获取版本号
+git reflog 
+6、退回上个版本
+git reset --hard HEAD^
+上上个版本
+git reset --hard HEAD^^
+前100个版本
+git reset --hard HEAD~100
+或者 git reset --hard f9c90a2 f9c90a2为版本号
+7、查看内容
+cat test.txt 
+8、删除文件
+rm test.txt 
+在版本库中删除文件
+git commit test.txt -m'在版本库中删除文件' %这样才能彻底删除
+8.1 恢复文件
+git checkout --test.txt 是指用版本库的版本替换掉工作区的版本
+
+10、关联远程库
+git remote add origin https://github.com/Jisy15/learngit.git
+10.1把本地库推送到远程库
+ git push -u origin master
+10.2
+git push origin master
+10.3克隆远程库到本地
+git clone https://github.com/Jisy15/clonegit
+
+分支管理
+1、git checkout -b dev  创建dev的分支，
+git checkout命令加上-b参数表⽰创建并切换，相当于
+$ git branch dev
+$ git checkout dev   #切换到当前分支
+2、查看分支
+git branch
